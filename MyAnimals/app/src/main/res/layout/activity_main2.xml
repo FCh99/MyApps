@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="18dp"
+    android:orientation="vertical"
+    tools:context="com.example.faustocheca.myanimals.Main2Activity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis animales"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginBottom="18dp"
+        android:textColor="#000"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginBottom="12dp"
+        >
+
+
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="left"
+            />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search"
+            android:onClick="search"
+            android:textSize="20dp"
+            android:layout_marginLeft="60dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="#e1e7ab"
+        android:layout_marginBottom="32dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dibujo_pyg_2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="PREVIOUS"
+            android:background="#b0c7ea"
+            android:layout_marginRight="48dp"
+            android:onClick="previous"
+            android:id="@+id/button_next"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="NEXT"
+            android:background="#f1a3b4"
+            android:onClick="next"
+            android:id="@+id/button_prev"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
